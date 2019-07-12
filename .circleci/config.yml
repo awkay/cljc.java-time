@@ -18,6 +18,7 @@ jobs:
 
       - run: clojure -Atest -e deprecated
       - run: sudo npm install karma-cli -g
+      - run: npm install karma --save-dev
       - run: mkdir -p cljs-test-runner-out/gen 
       - run: clojure -Sverbose -Atest-cljs  
 
